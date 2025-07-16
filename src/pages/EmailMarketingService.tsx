@@ -1,6 +1,10 @@
-import { ArrowLeft, Mail, Send, Users, Target, TrendingUp, Clock, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
+import { ArrowLeft, Mail, Send, Target, TrendingUp, CheckCircle } from 'lucide-react';
 
 const EmailMarketingService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: Mail,
@@ -97,16 +101,6 @@ const EmailMarketingService = () => {
                 Connect directly with your customers through powerful email marketing campaigns. 
                 Build relationships, drive sales, and grow your business with targeted messaging.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-indigo-200" />
-                  <span>2M+ Emails Delivered</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-indigo-200" />
-                  <span>Automated Workflows</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-2xl blur opacity-20"></div>

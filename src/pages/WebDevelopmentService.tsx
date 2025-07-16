@@ -1,6 +1,10 @@
-import { ArrowLeft, Code, Smartphone, Zap, Globe, Users, Clock, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
+import { ArrowLeft, Code, Smartphone, Zap, Globe, CheckCircle } from 'lucide-react';
 
 const WebDevelopmentService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: Code,
@@ -97,16 +101,6 @@ const WebDevelopmentService = () => {
                 Build powerful, scalable web applications that drive business growth. 
                 From simple websites to complex web applications, we deliver solutions that work.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-cyan-200" />
-                  <span>200+ Websites Built</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-cyan-200" />
-                  <span>Fast Delivery</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-2xl blur opacity-20"></div>

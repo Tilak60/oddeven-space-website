@@ -67,12 +67,12 @@ src/
 
 ## 🎨 Services Offered
 
-- **SEO Optimization** - Search engine optimization
-- **PPC Advertising** - Pay-per-click campaigns
-- **Social Media Marketing** - Social platform management
-- **Email Marketing** - Email campaign management
-- **Web Development** - Custom website development
-- **Analytics & Insights** - Data analysis and reporting
+- **SEO OPTIMIZATION** - Search engine optimization
+- **UI DESIGNING** - User interface design
+- **SOCIAL MEDIA MARKETING** - Social platform management
+- **EMAIL MARKETING** - Email campaign management
+- **WEB DEVELOPMENT** - Custom website development
+- **ANALYTICS & INSIGHTS** - Data analysis and reporting
 
 ## 🚀 Deployment
 

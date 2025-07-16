@@ -1,6 +1,10 @@
-import { ArrowLeft, BarChart3, PieChart, TrendingUp, Target, Users, Clock, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
+import { ArrowLeft, BarChart3, PieChart, TrendingUp, Target, CheckCircle } from 'lucide-react';
 
 const AnalyticsService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: BarChart3,
@@ -91,28 +95,18 @@ const AnalyticsService = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                Analytics & <span className="text-purple-200">Insights</span>
+                Branding & <span className="text-purple-200">Designing</span>
               </h1>
               <p className="text-xl text-purple-100 mb-8">
-                Transform your data into actionable insights that drive business growth. 
-                Make informed decisions with comprehensive analytics and reporting.
+                Create a compelling brand identity that resonates with your audience. 
+                Professional design solutions that elevate your business presence.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-purple-200" />
-                  <span>1000+ Data Points Tracked</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-purple-200" />
-                  <span>Real-time Monitoring</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl blur opacity-20"></div>
               <img
                 src="/images/B and D.jpg"
-                alt="Analytics & Insights"
+                alt="Branding & Designing"
                 className="relative w-full h-80 object-cover rounded-2xl shadow-2xl"
               />
             </div>
@@ -152,10 +146,10 @@ const AnalyticsService = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Why Choose Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Analytics Services?</span>
+                Why Choose Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Branding Services?</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Our advanced analytics solutions provide the insights you need to make smarter business decisions.
+                Our creative branding and design solutions help you build a strong, memorable brand identity.
               </p>
               <div className="grid gap-4">
                 {benefits.map((benefit, index) => (

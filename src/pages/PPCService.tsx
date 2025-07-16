@@ -1,6 +1,10 @@
-import { ArrowLeft, MousePointer, TrendingUp, Target, BarChart3, Users, Clock, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
+import { ArrowLeft, MousePointer, TrendingUp, Target, BarChart3, CheckCircle } from 'lucide-react';
 
 const PPCService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: MousePointer,
@@ -91,28 +95,18 @@ const PPCService = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-                PPC <span className="text-green-200">Advertising</span>
+                UI <span className="text-green-200">DESIGNING</span>
               </h1>
               <p className="text-xl text-green-100 mb-8">
-                Drive instant traffic and leads with strategic pay-per-click advertising campaigns. 
-                Get your business in front of customers who are actively searching for your services.
+                Create stunning and user-friendly interfaces that engage your audience. 
+                Get your business noticed with professional UI designs that convert visitors into customers.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-green-200" />
-                  <span>300+ Campaigns Managed</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-green-200" />
-                  <span>Real-time Optimization</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-blue-400 rounded-2xl blur opacity-20"></div>
               <img
                 src="/images/PM.jpg"
-                alt="PPC Advertising"
+                alt="UI DESIGNING"
                 className="relative w-full h-80 object-cover rounded-2xl shadow-2xl"
               />
             </div>

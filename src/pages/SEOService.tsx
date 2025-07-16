@@ -1,6 +1,10 @@
-import { ArrowLeft, Search, TrendingUp, Target, BarChart3, Users, Clock, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
+import { ArrowLeft, Search, TrendingUp, Target, BarChart3, CheckCircle } from 'lucide-react';
 
 const SEOService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: Search,
@@ -97,16 +101,6 @@ const SEOService = () => {
                 Boost your online visibility and drive organic traffic with our comprehensive SEO services. 
                 Get found by your target audience when they search for your products or services.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-blue-200" />
-                  <span>500+ Clients Served</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-blue-200" />
-                  <span>24/7 Support</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl blur opacity-20"></div>

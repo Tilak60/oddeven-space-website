@@ -7,6 +7,10 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+// Pages
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
+
 // Service Pages
 import SEOService from './pages/SEOService';
 import PPCService from './pages/PPCService';
@@ -31,6 +35,8 @@ function App() {
               <Footer />
             </>
           } />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/services/seo" element={<SEOService />} />
           <Route path="/services/ppc" element={<PPCService />} />
           <Route path="/services/analytics" element={<AnalyticsService />} />

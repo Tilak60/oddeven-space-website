@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 
 const Blog = () => {
@@ -55,12 +56,12 @@ const Blog = () => {
     },
     {
       id: 6,
-      title: 'PPC Advertising: Maximizing ROI with Smart Bidding Strategies',
-      excerpt: 'Discover advanced PPC strategies and smart bidding techniques that can significantly improve your return on advertising spend.',
+      title: 'UI DESIGNING: Maximizing ROI with Smart Bidding Strategies',
+      excerpt: 'Discover advanced UI design strategies and smart bidding techniques that can significantly improve your return on advertising spend.',
       author: 'Alex Kim',
       date: 'January 3, 2025',
       readTime: '7 min read',
-      category: 'PPC',
+      category: 'UI/UX',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80'
     }
   ];
@@ -89,55 +90,58 @@ const Blog = () => {
 
         {/* Featured Post */}
         <div className="mb-16 animate-fade-in-up">
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
-            <div className="lg:flex">
-              <div className="lg:w-1/2 relative overflow-hidden">
-                <img
-                  src={featuredPost.image}
-                  alt={featuredPost.title}
-                  className="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/10 group-hover:to-purple-600/10 transition-all duration-500"></div>
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-full shadow-lg">
-                    Featured
-                  </span>
-                </div>
-              </div>
-              <div className="lg:w-1/2 p-8 flex flex-col justify-center">
-                <div className="flex items-center mb-4">
-                  <span className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
-                    {featuredPost.category}
-                  </span>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-all duration-500">
-                  {featuredPost.title}
-                </h3>
-                <p className="text-gray-600 mb-6 group-hover:text-gray-700 transition-colors duration-300">{featuredPost.excerpt}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-sm text-gray-500">
-                    <User className="w-4 h-4 mr-1" />
-                    <span className="mr-4">{featuredPost.author}</span>
-                    <Calendar className="w-4 h-4 mr-1" />
-                    <span className="mr-4">{featuredPost.date}</span>
-                    <span>{featuredPost.readTime}</span>
+          <Link to={`/blog/${featuredPost.id}`} className="block">
+            <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
+              <div className="lg:flex">
+                <div className="lg:w-1/2 relative overflow-hidden">
+                  <img
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    className="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-purple-600/0 group-hover:from-blue-600/10 group-hover:to-purple-600/10 transition-all duration-500"></div>
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-full shadow-lg">
+                      Featured
+                    </span>
                   </div>
-                  <button className="text-blue-600 font-semibold hover:text-purple-600 transition-all duration-300 flex items-center group-hover:transform group-hover:translate-x-1">
-                    Read More
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </button>
+                </div>
+                <div className="lg:w-1/2 p-8 flex flex-col justify-center">
+                  <div className="flex items-center mb-4">
+                    <span className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
+                      {featuredPost.category}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-all duration-500">
+                    {featuredPost.title}
+                  </h3>
+                  <p className="text-gray-600 mb-6 group-hover:text-gray-700 transition-colors duration-300">{featuredPost.excerpt}</p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <User className="w-4 h-4 mr-1" />
+                      <span className="mr-4">{featuredPost.author}</span>
+                      <Calendar className="w-4 h-4 mr-1" />
+                      <span className="mr-4">{featuredPost.date}</span>
+                      <span>{featuredPost.readTime}</span>
+                    </div>
+                    <div className="text-blue-600 font-semibold hover:text-purple-600 transition-all duration-300 flex items-center group-hover:transform group-hover:translate-x-1">
+                      Read More
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Recent Posts Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {recentPosts.map((post) => (
-            <div
+            <Link
               key={post.id}
-              className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group animate-fadeInUp"
+              to={`/blog/${post.id}`}
+              className="block bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group animate-fadeInUp"
               style={{ animationDelay: `${post.id * 0.15}s` }}
             >
               <div className="relative overflow-hidden">
@@ -169,13 +173,13 @@ const Blog = () => {
                   </div>
                 </div>
                 <div className="pt-4 border-t border-gray-100">
-                  <button className="text-blue-600 font-semibold hover:text-purple-600 transition-all duration-300 flex items-center group-hover:transform group-hover:translate-x-1">
+                  <div className="text-blue-600 font-semibold hover:text-purple-600 transition-all duration-300 flex items-center group-hover:transform group-hover:translate-x-1">
                     Read More
                     <ArrowRight className="w-4 h-4 ml-1" />
-                  </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

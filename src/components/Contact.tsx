@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from '@formspree/react';
-import { Send, CheckCircle, AlertCircle, Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Send, CheckCircle, AlertCircle, Mail, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [state, handleFormspreeSubmit] = useForm("mblkjpko");
@@ -56,24 +56,22 @@ const Contact = () => {
 
   const services = [
     { value: '', label: 'Select a service' },
-    { value: 'web-development', label: 'Web Development' },
-    { value: 'mobile-app', label: 'Mobile App Development' },
-    { value: 'ui-ux', label: 'UI/UX Design' },
-    { value: 'digital-marketing', label: 'Digital Marketing' },
-    { value: 'seo', label: 'SEO Optimization' },
-    { value: 'social-media', label: 'Social Media Management' },
-    { value: 'content-creation', label: 'Content Creation' },
-    { value: 'branding', label: 'Branding & Logo Design' },
-    { value: 'ecommerce', label: 'E-commerce Solutions' },
-    { value: 'consulting', label: 'Business Consulting' },
-    { value: 'other', label: 'Other' }
+    { value: 'web-development', label: 'WEB DEVELOPMENT' },
+    { value: 'mobile-app', label: 'MOBILE APP DEVELOPMENT' },
+    { value: 'ui-ux', label: 'UI/UX DESIGN' },
+    { value: 'digital-marketing', label: 'DIGITAL MARKETING' },
+    { value: 'seo', label: 'SEO OPTIMIZATION' },
+    { value: 'social-media', label: 'SOCIAL MEDIA MANAGEMENT' },
+    { value: 'content-creation', label: 'CONTENT CREATION' },
+    { value: 'branding', label: 'BRANDING & LOGO DESIGN' },
+    { value: 'ecommerce', label: 'E-COMMERCE SOLUTIONS' },
+    { value: 'consulting', label: 'BUSINESS CONSULTING' },
+    { value: 'other', label: 'OTHER' }
   ];
 
   const contactInfo = [
     { icon: Mail, title: 'Email Us', content: 'oddevenspace.com@gmail.com', color: 'from-blue-500 to-cyan-500' },
-    { icon: Phone, title: 'Call Us', content: '+91 8669197917', color: 'from-purple-500 to-pink-500' },
-    { icon: MapPin, title: 'Visit Us', content: 'Available Globally', color: 'from-emerald-500 to-teal-500' },
-    { icon: Clock, title: 'Working Hours', content: '24/7 Support', color: 'from-orange-500 to-red-500' }
+    { icon: Phone, title: 'Call Us', content: '+91 8669197917', color: 'from-purple-500 to-pink-500' }
   ];
 
   return (
@@ -97,7 +95,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-12 md:mb-16 max-w-2xl mx-auto">
           {contactInfo.map((info, index) => {
             const IconComponent = info.icon;
             return (

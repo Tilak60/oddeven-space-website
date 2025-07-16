@@ -1,6 +1,10 @@
-import { ArrowLeft, Share2, Heart, MessageCircle, TrendingUp, Users, Clock, CheckCircle } from 'lucide-react';
+import { useEffect } from 'react';
+import { ArrowLeft, Share2, Heart, MessageCircle, TrendingUp, CheckCircle } from 'lucide-react';
 
 const SocialMediaService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const features = [
     {
       icon: Share2,
@@ -97,16 +101,6 @@ const SocialMediaService = () => {
                 Build a strong social media presence that connects with your audience and drives business growth. 
                 Engage, inspire, and convert your followers into loyal customers.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-5 h-5 text-pink-200" />
-                  <span>1M+ Followers Managed</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="w-5 h-5 text-pink-200" />
-                  <span>24/7 Monitoring</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-pink-400 to-purple-400 rounded-2xl blur opacity-20"></div>

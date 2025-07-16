@@ -30,7 +30,7 @@ const Services = () => {
 
   const services = [
     {
-      title: 'SEO Optimization',
+      title: 'SEO OPTIMIZATION',
       image: '/images/SEO.jpg',
       path: '/services/seo',
       icon: TrendingUp,
@@ -38,7 +38,7 @@ const Services = () => {
       description: 'Boost your search rankings and drive organic traffic'
     },
     {
-      title: 'PPC Advertising',
+      title: 'UI DESIGNING',
       image: '/images/PM.jpg',
       path: '/services/ppc',
       icon: Target,
@@ -46,15 +46,15 @@ const Services = () => {
       description: 'Get instant visibility with targeted advertising campaigns'
     },
     {
-      title: 'Analytics & Insights',
+      title: 'BRANDING AND DESIGNING',
       image: '/images/B and D.jpg',
       path: '/services/analytics',
       icon: Sparkles,
       color: 'from-purple-500 to-pink-500',
-      description: 'Data-driven insights to optimize your performance'
+      description: 'Creative branding and design solutions for your business'
     },
     {
-      title: 'Social Media Marketing',
+      title: 'SOCIAL MEDIA MARKETING',
       image: '/images/Sm.jpg',
       path: '/services/social-media',
       icon: Globe,
@@ -62,7 +62,7 @@ const Services = () => {
       description: 'Engage your audience across all social platforms'
     },
     {
-      title: 'Email Marketing',
+      title: 'EMAIL MARKETING',
       image: '/images/PM.jpg',
       path: '/services/email-marketing',
       icon: Mail,
@@ -70,7 +70,7 @@ const Services = () => {
       description: 'Build lasting relationships with personalized campaigns'
     },
     {
-      title: 'Web Development',
+      title: 'WEB DEVELOPMENT',
       image: '/images/WD.jpg',
       path: '/services/web-development',
       icon: Zap,
@@ -80,24 +80,24 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+    <section id="services" className="py-16 md:py-24 neon-bg relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-r from-blue-200/20 to-purple-200/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-r from-purple-200/20 to-pink-200/20 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl animate-float neon-glow"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-float-delayed neon-glow"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 md:mb-20">
           <div className={`transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
+              <span className="neon-gradient-text">
                 Our Services
               </span>
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl md:max-w-3xl mx-auto leading-relaxed">
-              We offer <span className="text-blue-600 font-semibold">comprehensive marketing solutions</span> designed to 
-              <span className="text-purple-600 font-semibold"> accelerate your business growth</span> and maximize your ROI.
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl md:max-w-3xl mx-auto leading-relaxed">
+              We offer <span className="neon-text-cyan font-semibold">comprehensive marketing solutions</span> designed to 
+              <span className="neon-text-purple font-semibold"> accelerate your business growth</span> and maximize your ROI.
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Services = () => {
               <Link
                 key={index}
                 to={service.path}
-                className={`group relative bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-2 md:hover:-translate-y-4 ${
+                className={`group relative neon-card rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-2 md:hover:-translate-y-4 hover:neon-border-cyan ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
@@ -138,25 +138,25 @@ const Services = () => {
                 
                 <div className="p-6 md:p-8 relative">
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-all duration-500 transform group-hover:scale-105">
+                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:neon-text-cyan transition-all duration-500 transform group-hover:scale-105">
                       {service.title}
                     </h3>
-                    <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-all duration-500 transform translate-x-0 group-hover:translate-x-1" />
+                    <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-all duration-500 transform translate-x-0 group-hover:translate-x-1 glow-effect" />
                   </div>
                   
-                  <p className="text-gray-600 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  <p className="text-gray-300 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                     {service.description}
                   </p>
                   
                   <div className="flex items-center space-x-2">
-                    <span className="text-blue-600 font-medium opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                    <span className="text-cyan-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                       Learn More
                     </span>
-                    <div className={`w-0 group-hover:w-8 h-0.5 bg-gradient-to-r ${service.color} transition-all duration-500`}></div>
+                    <div className={`w-0 group-hover:w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-400 transition-all duration-500 shadow-sm shadow-cyan-400/50`}></div>
                   </div>
                   
                   {/* Animated border */}
-                  <div className={`absolute inset-0 border-2 border-transparent group-hover:border-blue-600 rounded-2xl md:rounded-3xl transition-all duration-500`}></div>
+                  <div className={`absolute inset-0 border-2 border-transparent group-hover:border-cyan-400 rounded-2xl md:rounded-3xl transition-all duration-500 shadow-sm shadow-cyan-400/30`}></div>
                 </div>
                 
                 {/* Floating particles effect */}
