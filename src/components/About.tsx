@@ -15,13 +15,18 @@ const About = () => {
             About oddeven.space
           </h2>
           <p className="text-xl text-gray-600 mb-8 animate-slide-up-delayed transform hover:text-gray-700 transition-colors duration-300">
-            We're a full-service digital marketing agency dedicated to helping businesses 
-            achieve extraordinary growth through innovative strategies and data-driven solutions.
+            We're a fresh, innovative digital marketing agency bringing modern solutions and 
+            cutting-edge strategies to help businesses achieve extraordinary growth in today's digital landscape.
           </p>
           <p className="text-gray-600 mb-8 animate-slide-up-delayed-2 transform hover:text-gray-700 transition-colors duration-300">
-            Founded in 2016, we've helped over 500 companies transform their digital presence 
-            and achieve remarkable results. Our team of experts combines creativity with 
-            analytical thinking to deliver campaigns that not only look great but perform exceptionally.
+            As a newly established company, we bring fresh perspectives and the latest industry insights 
+            to every project. Our passionate team combines creativity with data-driven strategies 
+            to deliver exceptional results that drive real business growth.
+          </p>
+          <p className="text-gray-600 mb-8 animate-slide-up-delayed-3 transform hover:text-gray-700 transition-colors duration-300">
+            While we're new to the market, our expertise isn't. We're committed to building lasting 
+            partnerships and delivering innovative solutions that help our clients stay ahead in 
+            the competitive digital world.
           </p>
         </div>
       </div>

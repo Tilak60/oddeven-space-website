@@ -63,11 +63,15 @@ const SEOService = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/images/logo.jpg" 
+                  alt="oddeven.space logo" 
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
               <span className="ml-3 text-xl font-bold text-gray-900">
-                MarketPro
+                oddeven.space
               </span>
             </div>
             <button
@@ -107,7 +111,7 @@ const SEOService = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl blur opacity-20"></div>
               <img
-                src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=600&q=80"
+                src="/images/SEO.jpg"
                 alt="SEO Optimization"
                 className="relative w-full h-80 object-cover rounded-2xl shadow-2xl"
               />
