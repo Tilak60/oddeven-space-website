@@ -89,17 +89,15 @@ const Services = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 md:mb-20">
-          <div className={`transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="neon-gradient-text">
-                Our Services
-              </span>
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl md:max-w-3xl mx-auto leading-relaxed">
-              We offer <span className="neon-text-cyan font-semibold">comprehensive marketing solutions</span> designed to 
-              <span className="neon-text-purple font-semibold"> accelerate your business growth</span> and maximize your ROI.
-            </p>
-          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <span className="neon-gradient-text">
+              Our Services
+            </span>
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl md:max-w-3xl mx-auto leading-relaxed">
+            We offer <span className="neon-text-cyan font-semibold">comprehensive marketing solutions</span> designed to 
+            <span className="neon-text-purple font-semibold"> accelerate your business growth</span> and maximize your ROI.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -109,9 +107,7 @@ const Services = () => {
               <Link
                 key={index}
                 to={service.path}
-                className={`group relative neon-card rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-2 md:hover:-translate-y-4 ${
-                  isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                }`}
+                className={"group relative neon-card rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-2 md:hover:-translate-y-4"}
                 style={{ transitionDelay: `${index * 150}ms` }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
