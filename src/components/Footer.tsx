@@ -45,7 +45,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/oddeven.space', label: 'Instagram', color: 'from-pink-500 to-red-500' },
-    { icon: LinkedIn, href: '#', label: 'LinkedIn', color: 'from-blue-700 to-blue-800' }
+    { icon: LinkedIn, href: 'https://www.linkedin.com/in/oddeven-space-9a1b22375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn', color: 'from-blue-700 to-blue-800' }
   ];
 
   return (

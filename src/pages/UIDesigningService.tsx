@@ -1,0 +1,206 @@
+import { useEffect } from 'react';
+import { ArrowLeft, Palette, Monitor, Smartphone, Users, CheckCircle } from 'lucide-react';
+
+const UIDesigningService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  const features = [
+    {
+      icon: Palette,
+      title: 'UI/UX Design',
+      description: 'Create intuitive and engaging user interfaces that enhance user experience.'
+    },
+    {
+      icon: Monitor,
+      title: 'Web Design',
+      description: 'Professional web designs that are both beautiful and functional.'
+    },
+    {
+      icon: Smartphone,
+      title: 'Mobile Design',
+      description: 'Mobile-first design approach for optimal user experience across devices.'
+    },
+    {
+      icon: Users,
+      title: 'User Research',
+      description: 'Research-driven design decisions based on user behavior and preferences.'
+    }
+  ];
+
+  const benefits = [
+    'Improved user experience',
+    'Higher conversion rates',
+    'Professional appearance',
+    'Mobile-responsive design',
+    'Better user engagement',
+    'Competitive advantage'
+  ];
+
+  const process = [
+    {
+      step: '01',
+      title: 'Research & Analysis',
+      description: 'Understand your users, competitors, and business requirements.'
+    },
+    {
+      step: '02',
+      title: 'Wireframing',
+      description: 'Create wireframes and prototypes to visualize the user journey.'
+    },
+    {
+      step: '03',
+      title: 'Visual Design',
+      description: 'Design beautiful and functional interfaces that align with your brand.'
+    },
+    {
+      step: '04',
+      title: 'Testing & Iteration',
+      description: 'Test designs with users and iterate based on feedback.'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/images/logo.jpg" 
+                  alt="oddeven.space logo" 
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <span className="ml-3 text-xl font-bold text-gray-900">
+                oddeven.space
+              </span>
+            </div>
+            <button
+              onClick={() => window.history.back()}
+              className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span>Back</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+                UI <span className="text-blue-200">Designing</span>
+              </h1>
+              <p className="text-xl text-blue-100 mb-8">
+                Create stunning and user-friendly interfaces that engage your audience and drive conversions. 
+                Transform your digital presence with professional UI/UX design solutions.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl blur opacity-20"></div>
+              <img
+                src="/images/logo.jpg"
+                alt="UI Designing"
+                className="relative w-full h-80 object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Our UI Design <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Services</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive UI/UX design solutions to create exceptional user experiences.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <feature.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                Why Choose Our <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">UI Design Services?</span>
+              </h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Our design-focused approach creates interfaces that users love and businesses benefit from.
+              </p>
+              <div className="grid gap-4">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700 font-medium">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl blur opacity-20"></div>
+              <img
+                src="/images/logo.jpg"
+                alt="UI Design Process"
+                className="relative w-full h-80 object-cover rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Our Design <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Process</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We follow a user-centered design process to create interfaces that delight and convert.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {process.map((step, index) => (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">{step.step}</span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+};
+
+export default UIDesigningService;

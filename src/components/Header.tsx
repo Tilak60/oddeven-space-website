@@ -18,6 +18,10 @@ const Header = () => {
         });
       }
     }
+    // For home page navigation, scroll to top
+    if (href === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const navItems = [
@@ -32,7 +36,7 @@ const Header = () => {
     <>
       {/* Website name - Top Left Corner */}
       <div className="fixed top-6 left-6 z-50">
-        <Link to="/" className="flex items-center group">
+        <Link to="/" className="flex items-center group" onClick={() => handleNavClick('/')}>
           <div className="w-10 h-10 rounded-lg neon-border flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
             <img 
               src="/images/logo.jpg" 

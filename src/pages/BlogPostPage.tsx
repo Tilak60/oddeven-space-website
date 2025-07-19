@@ -274,7 +274,7 @@ const BlogPostPage = () => {
                 <a href="#" className="w-10 h-10 rounded-lg neon-card hover:neon-border-cyan flex items-center justify-center transition-all duration-300 group">
                   <Twitter className="w-5 h-5 group-hover:scale-110 transition-transform duration-300 glow-effect" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-lg neon-card hover:neon-border-cyan flex items-center justify-center transition-all duration-300 group">
+                <a href="https://www.linkedin.com/in/oddeven-space-9a1b22375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg neon-card hover:neon-border-cyan flex items-center justify-center transition-all duration-300 group">
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300 glow-effect" />
                 </a>
               </div>

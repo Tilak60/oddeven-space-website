@@ -39,16 +39,16 @@ const Services = () => {
     },
     {
       title: 'UI DESIGNING',
-      image: '/images/PM.jpg',
-      path: '/services/ppc',
+      image: '/images/ui.jpg',
+      path: '/services/ui-designing',
       icon: Target,
       color: 'from-blue-500 to-cyan-500',
-      description: 'Get instant visibility with targeted advertising campaigns'
+      description: 'Create stunning and user-friendly interfaces that engage your audience'
     },
     {
       title: 'BRANDING AND DESIGNING',
       image: '/images/B and D.jpg',
-      path: '/services/analytics',
+      path: '/services/branding',
       icon: Sparkles,
       color: 'from-purple-500 to-pink-500',
       description: 'Creative branding and design solutions for your business'
@@ -109,7 +109,7 @@ const Services = () => {
               <Link
                 key={index}
                 to={service.path}
-                className={`group relative neon-card rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-2 md:hover:-translate-y-4 hover:neon-border-cyan ${
+                className={`group relative neon-card rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 cursor-pointer transform hover:-translate-y-2 md:hover:-translate-y-4 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
@@ -138,10 +138,10 @@ const Services = () => {
                 
                 <div className="p-6 md:p-8 relative">
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:neon-text-cyan transition-all duration-500 transform group-hover:scale-105">
+                    <h3 className="text-xl md:text-2xl font-bold text-white transition-all duration-500 transform group-hover:scale-105">
                       {service.title}
                     </h3>
-                    <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-cyan-400 transition-all duration-500 transform translate-x-0 group-hover:translate-x-1 glow-effect" />
+                    <ArrowRight className="w-5 h-5 text-gray-400 transition-all duration-500 transform translate-x-0 group-hover:translate-x-1" />
                   </div>
                   
                   <p className="text-gray-300 text-sm md:text-base mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
@@ -149,14 +149,14 @@ const Services = () => {
                   </p>
                   
                   <div className="flex items-center space-x-2">
-                    <span className="text-cyan-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                    <span className="text-gray-400 font-medium opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                       Learn More
                     </span>
-                    <div className={`w-0 group-hover:w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-400 transition-all duration-500 shadow-sm shadow-cyan-400/50`}></div>
+                    <div className={`w-0 group-hover:w-8 h-0.5 bg-gray-400 transition-all duration-500`}></div>
                   </div>
                   
                   {/* Animated border */}
-                  <div className={`absolute inset-0 border-2 border-transparent group-hover:border-cyan-400 rounded-2xl md:rounded-3xl transition-all duration-500 shadow-sm shadow-cyan-400/30`}></div>
+                  <div className={`absolute inset-0 border-2 border-transparent transition-all duration-500`}></div>
                 </div>
                 
                 {/* Floating particles effect */}

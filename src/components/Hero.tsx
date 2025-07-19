@@ -58,30 +58,6 @@ const Hero = () => {
             />
           </div>
 
-          {/* Main Heading with Typing Effect */}
-          <div className={`transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6">
-              <span className="neon-gradient-text">
-                Welcome to
-              </span>
-            </h1>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 md:mb-8">
-              <span className="neon-text" style={{ animationDelay: '0.5s' }}>
-                oddeven.space
-              </span>
-            </h2>
-          </div>
-
-          {/* Animated Subtitle */}
-          <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 md:mb-12 max-w-2xl md:max-w-3xl mx-auto leading-relaxed">
-              <span className="neon-text-cyan font-semibold">Transform</span> your digital presence with{' '}
-              <span className="neon-text-purple font-semibold">cutting-edge</span> solutions where{' '}
-              <span className="neon-text-cyan font-semibold">creativity</span> meets{' '}
-              <span className="neon-text-pink font-semibold">innovation</span>
-            </p>
-          </div>
-
           {/* Animated CTA Button */}
           <div className={`transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <button

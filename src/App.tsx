@@ -18,6 +18,8 @@ import AnalyticsService from './pages/AnalyticsService';
 import SocialMediaService from './pages/SocialMediaService';
 import EmailMarketingService from './pages/EmailMarketingService';
 import WebDevelopmentService from './pages/WebDevelopmentService';
+import BrandingService from './pages/BrandingService';
+import UIDesigningService from './pages/UIDesigningService';
 
 function App() {
   return (
@@ -39,7 +41,9 @@ function App() {
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/services/seo" element={<SEOService />} />
           <Route path="/services/ppc" element={<PPCService />} />
+          <Route path="/services/ui-designing" element={<UIDesigningService />} />
           <Route path="/services/analytics" element={<AnalyticsService />} />
+          <Route path="/services/branding" element={<BrandingService />} />
           <Route path="/services/social-media" element={<SocialMediaService />} />
           <Route path="/services/email-marketing" element={<EmailMarketingService />} />
           <Route path="/services/web-development" element={<WebDevelopmentService />} />
