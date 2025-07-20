@@ -91,7 +91,7 @@ const Footer = () => {
                   <Phone className="w-5 h-5 glow-effect" />
                 </div>
                 <span className="group-hover:translate-x-1 transition-transform duration-300">
-                  +91 8669197917
+                  9172493822
                 </span>
               </div>
             </div>

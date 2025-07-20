@@ -71,7 +71,7 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Mail, title: 'Email Us', content: 'oddevenspace.com@gmail.com', color: 'from-blue-500 to-cyan-500' },
-    { icon: Phone, title: 'Call Us', content: '+91 8669197917', color: 'from-purple-500 to-pink-500' }
+    { icon: Phone, title: 'Call Us', content: '9172493822', color: 'from-purple-500 to-pink-500' }
   ];
 
   return (
